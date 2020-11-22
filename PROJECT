@@ -1,5 +1,5 @@
 domain: my.domain
-repo: github.com/vmware-tanzu-private/kb-test-1
+repo: github.com/pbarker/kb-test-1
 resources:
 - group: bar
   kind: BB
