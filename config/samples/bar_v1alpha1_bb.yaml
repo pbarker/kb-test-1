@@ -1,0 +1,7 @@
+apiVersion: bar.my.domain/v1alpha1
+kind: BB
+metadata:
+  name: bb-sample
+spec:
+  # Add fields here
+  foo: bar

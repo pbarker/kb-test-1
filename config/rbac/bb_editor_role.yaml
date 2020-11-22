@@ -1,0 +1,24 @@
+# permissions for end users to edit bbs.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: bb-editor-role
+rules:
+- apiGroups:
+  - bar.my.domain
+  resources:
+  - bbs
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - bar.my.domain
+  resources:
+  - bbs/status
+  verbs:
+  - get
